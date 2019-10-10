@@ -12,8 +12,7 @@ public class RestAssuredConfig {
 
     @BeforeSuite(alwaysRun = true)
     public static void init(){
-        RestAssured.baseURI = "http://localhost/external/api";
-        RestAssured.port = 12387;
+        RestAssured.baseURI = "http://staging-api.thriveglobal.com/v1/analytics";
     }
 
     public static String auth_CorrectCreds_ReturnToken(String userName,String password,String clientId,String clientSecret) {
